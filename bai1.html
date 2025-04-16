@@ -14,16 +14,16 @@
         function generatorId(length, prefix = "") {
             // Xử lý và return về kết quả
             let list = ""
-            for (let i = 0; i <br length; i++) {
+            for (let i = 0; i < length ; i++) {
                 let randomId = 0
                 randomId = Math.floor(Math.random() * listCharacters.length)
                 list += listCharacters[randomId]
             }
             return `${prefix}${list}`
         }
-        document.writeln(generatorId(8, "user") <hr>); // Output: "user5a3Fb2DF"
-        document.writeln(generatorId(4, "product - ")); // Output: "product - 3a2f"
-        document.writeln(generatorId(10)); // Output: "5a3Fb2DFc1"
+        console.log(generatorId(8, "user")); // Output: "user5a3Fb2DF"
+        console.log(generatorId(4, "product - ")); // Output: "product - 3a2f"
+        console.log(generatorId(10)); // Output: "5a3Fb2DFc1"
     </script>
 </body>
 
